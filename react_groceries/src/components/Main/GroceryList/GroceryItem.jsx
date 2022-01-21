@@ -8,7 +8,7 @@ class GroceryItem extends Component {
    handleIsPurchased = (event)=>{
     event.preventDefault();
     this.props.handleIsPurchased(!this.state.isPurchased,this.props.index,this.state.quantity)
-    this.props.handleOnChangeQuantity(this.state.quantity,this.props.index)
+    this.props.handleOnChangeQuantity?.(this.state.quantity,this.props.index)
    }
    handleOnChangeQuantity = (event)=>{
         this.setState({ [event.target.id]: event.target.value })

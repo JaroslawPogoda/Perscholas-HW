@@ -104,7 +104,7 @@ class Main extends Component {
                 className="Purchased "
                 buttonName="Remove"
                 title={"Purchased Item"}
-                handleOnChangeQuantity={this.handleOnChangeQuantity}
+                // handleOnChangeQuantity={this.handleOnChangeQuantity}
                 handleIsPurchased={this.handleRemove}
                 grocery={groceryItem[0]}
                 index={index}
